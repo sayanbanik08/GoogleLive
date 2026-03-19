@@ -1,0 +1,106 @@
+
+> google-live@0.1.0 build
+> next build
+
+??? Next.js 16.2.0 (Turbopack)
+- Environments: .env.local
+
+  Creating an optimized production build ...
+node.exe : 
+At line:1 char:1
++ & "C:\Program Files\
+nodejs/node.exe" 
+"C:\Program 
+Files\nodejs/node_mo 
+...
++ ~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+~~~~~
+    + CategoryInfo    
+          : NotSpeci  
+  fied: (:String) [   
+ ], RemoteExceptio    
+n
+    + FullyQualifiedE 
+   rrorId : NativeCo  
+  mmandError
+ 
+> Build error occurred
+Error: Turbopack 
+build failed with 1 
+errors:
+./src/components/Map.t
+sx:4:1
+Module not found: 
+Can't resolve 
+'react-map-gl'
+  [90m2 |[0m
+  [90m3 |[0m 
+[36mimport[0m { 
+useState } 
+[36mfrom[0m 
+[32m"react"[0m;
+[31m[1m>[0m [90m4 
+|[0m [36mimport[0m 
+[33mMapbox[0m, { 
+[33mMarker[0m, [33m
+NavigationControl[0m 
+} [36mfrom[0m [32m"
+react-map-gl"[0m;
+  [90m  |[0m [31m[
+1m^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^
+^[0m
+  [90m5 |[0m 
+[36mimport[0m [32m"
+mapbox-gl/dist/mapbox-
+gl.css"[0m;
+  [90m6 |[0m
+  [90m7 |[0m 
+[36mexport[0m 
+[36mdefault[0m 
+[36mfunction[0m 
+[33mMap[0m() {
+
+
+
+Import traces:
+  Client Component 
+Browser:
+    ./src/components/M
+ap.tsx [Client 
+Component Browser]
+    
+./src/app/page.tsx 
+[Client Component 
+Browser]
+    
+./src/app/page.tsx 
+[Server Component]
+
+  Client Component 
+SSR:
+    ./src/components/M
+ap.tsx [Client 
+Component SSR]
+    
+./src/app/page.tsx 
+[Client Component SSR]
+    
+./src/app/page.tsx 
+[Server Component]
+
+https://nextjs.org/doc
+s/messages/module-not-
+found
+
+
+    at <unknown> (./sr
+c/components/Map.tsx:4
+:1)
+    at <unknown> (http
+s://nextjs.org/docs/me
+ssages/module-not-foun
+d)
